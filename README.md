@@ -73,3 +73,10 @@ docker-compose stop
 docker-compose build --no-cache php
 docker-compose up -d
 ~~~~
+
+### 重置容器
+
+~~~~
+docker-compose stop
+docker-compose rm --force
+~~~~
