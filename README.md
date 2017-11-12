@@ -1,5 +1,6 @@
 # docker-nginx-mysql-php
-docker：nginx+mysql+php
+docker：nginx+mysql+php 分三个容器独立部署
+
 
 #### 下载源码
 ~~~~
