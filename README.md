@@ -51,7 +51,7 @@ docker exec -it php /bin/bash
 ~~~~
 windows系统可能需要改bin才可已进入
 ~~~~
-docker exec -it php /bin
+winty docker exec -it php bash
 ~~~~
 
 
