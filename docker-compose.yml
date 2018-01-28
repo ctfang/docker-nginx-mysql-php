@@ -1,9 +1,10 @@
 version: '2'
 
 services:
-  db:
+  mysql:
     restart: always
     image: mysql:5.6
+    container_name: mysql
     expose:
       - "3306"
     ports:
@@ -25,13 +26,13 @@ services:
     ports:
       - "9000:9000"
     links:
-      - db
+      - mysql
     volumes:
       - /data/webpages:/data/webpages
     env_file:
       - variables.env
 
-  web:
+  nginx:
     restart: always
     image: nginx
     container_name: nginx
